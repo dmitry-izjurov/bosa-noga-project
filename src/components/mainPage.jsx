@@ -18,13 +18,13 @@ function MainPage() {
             <Router>
                 <Header headerLogo={HeaderLogo} banner={Banner} />
                 <Routes>
-                    <Route path="/" element={<HomePage globalDataObjs={globalDataObjs} />} />
-                    <Route path="/catalog" element={<Catalog globalDataObjs={globalDataObjs} />} />
-                    <Route path="/contacts" element={<Contacts />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/cart" element={<Cart />} />
+                    <Route path="/bosa-noga-project/" element={<HomePage globalDataObjs={globalDataObjs} />} />
+                    <Route path="/bosa-noga-project/catalog" element={<Catalog globalDataObjs={globalDataObjs} />} />
+                    <Route path="/bosa-noga-project/contacts" element={<Contacts />} />
+                    <Route path="/bosa-noga-project/about" element={<About />} />
+                    <Route path="/bosa-noga-project/cart" element={<Cart />} />
                     <Route path='*' element={<Page404 />}/>
-                    <Route path="/products/:id" element={<ItemProductCard globalDataObjs={globalDataObjs} />} />
+                    <Route path="/bosa-noga-project/products/:id" element={<ItemProductCard globalDataObjs={globalDataObjs} />} />
                 </Routes>
                 <Footer />
             </Router>

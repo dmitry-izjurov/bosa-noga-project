@@ -81,7 +81,7 @@ function HomePage({globalDataObjs}) {
                         <div className="text-center">
                             <div><button type="button" className="btn btn-outline-primary" onClick={handleClick}>Показать ещё</button></div>
                             <div>или</div>
-                            <div><Link to="/catalog"><button type="button" className="btn btn-outline-primary">Перейти в каталог</button></Link></div>
+                            <div><Link to="/bosa-noga-project/catalog"><button type="button" className="btn btn-outline-primary">Перейти в каталог</button></Link></div>
                         </div>
                     }
                 </>

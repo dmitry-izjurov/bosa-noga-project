@@ -14,9 +14,9 @@ function Header({headerLogo, banner}) {
         }
     });
     
-    if (currentLocation !== '/') {
+    if (currentLocation !== '/bosa-noga-project/') {
         const currentLocationArr = currentLocation.split('/');
-        const currentLocationStr = '/' + currentLocationArr[1];
+        const currentLocationStr = '/bosa-noga-project/' + currentLocationArr[2];
         listNavMenu.forEach((o,i) => {
             if (o.path === currentLocationStr) {
                 listNavMenu[i].classN = "nav-item active";
@@ -33,14 +33,14 @@ function Header({headerLogo, banner}) {
             <div className="row">
                 <div className="col">
                     <nav className="navbar navbar-expand-sm navbar-light bg-light">
-                        <Link className="navbar-brand" to="/">
+                        <Link className="navbar-brand" to="/bosa-noga-project/">
                             <img src={headerLogo} alt="Bosa Noga" />
                         </Link>
                         <div className="collapse navbar-collapse" id="navbarMain">
                             <ul className="navbar-nav mr-auto">
                                 {listNavMenu.map((o,i) => <ItemNavMenu key={i} id={o.id} clName={o.classN} pathTo={o.path} textElem={o.title} dispatch={dispatch} />)}
                             </ul>
-                            <Link to="/cart">
+                            <Link to="/bosa-noga-project/cart">
                                 <div className="header-controls-pics">
                                     <div className="header-controls-pic header-controls-cart">
                                         {

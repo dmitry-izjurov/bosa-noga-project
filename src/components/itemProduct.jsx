@@ -8,7 +8,7 @@ function ItemProduct({elem, globalDataObjs}) {
                 <div className="card-body">
                     <p className="card-text">{globalDataObjs[elem].title}</p>
                     <p className="card-text">{globalDataObjs[elem].price} руб.</p>
-                    <Link to={`/products/${globalDataObjs[elem].id}`} className="btn btn-outline-primary">Заказать</Link>
+                    <Link to={`/bosa-noga-project/products/${globalDataObjs[elem].id}`} className="btn btn-outline-primary">Заказать</Link>
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@ function Catalog({globalDataObjs}) {
         if (activeId !== +id) {
             dispatch(changeActiveIdCatalogService(id));
             dispatch(changeClassMenuCatalogService(id));
-            dispatch(changeListSalesSpliceAllCatalogService('load-product', id))
+            dispatch(changeListSalesSpliceAllCatalogService('load-product', id));
         }
     }
 

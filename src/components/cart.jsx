@@ -1,10 +1,35 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import ItemProductCardInTable from './itemProductCardInTable';
+import {
+    changeListSalesHits,
+    changeListSalesSplice,
+    changeClassMenuCatalogService,
+    changeListSalesSpliceAllCatalogService,
+    changeActiveIdCatalogService,
+    removeProductOfCartService
+} from '../redux/actionCreators';
 
 function Cart() {
+    const dispatch = useDispatch();
     const productsInCart = useSelector(state => state.serviceProductsInCart);
     let totalPrice = 0;
     productsInCart.forEach(a => totalPrice += a.price);
+
+    const handleClick = (e) => {
+        if (productsInCart.length !== 0) {
+            dispatch(changeListSalesHits());
+            dispatch(changeListSalesSplice());
+            dispatch(changeActiveIdCatalogService());
+            dispatch(changeClassMenuCatalogService());
+            dispatch(changeListSalesSpliceAllCatalogService());
+            dispatch(removeProductOfCartService());
+            e.preventDefault();
+            alert('Все товары были успешно оформлены!');
+            e.target.closest('form').reset();
+        } else {
+            alert('Корзина пуста!');
+        }
+    }
 
     return (
         <main className="container">
@@ -51,7 +76,7 @@ function Cart() {
                                     <input type="checkbox" className="form-check-input" id="agreement" required />
                                     <label className="form-check-label" htmlFor="agreement">Согласен с правилами доставки</label>
                                 </div>
-                                <button type="submit" className="btn btn-outline-secondary">Оформить</button>
+                                <button type="button" className="btn btn-outline-secondary" onClick={handleClick}>Оформить</button>
                             </form>
                         </div>
                     </section>

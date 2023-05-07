@@ -18,6 +18,7 @@ function serviceProductsInCartReducer(state = initialState, action) {
 
         case REMOVE_PRODUCT_OF_CART_SERVICE:
             const {idRemove} = action.payload;
+            if (!idRemove) return [];
             return state.filter(a => a.id !== idRemove);
       
         default:

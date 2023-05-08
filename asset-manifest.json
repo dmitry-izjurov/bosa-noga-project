@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bosa-noga-project/static/css/main.460e67b1.css",
-    "main.js": "/bosa-noga-project/static/js/main.39329ddb.js",
+    "main.css": "/bosa-noga-project/static/css/main.f665f41f.css",
+    "main.js": "/bosa-noga-project/static/js/main.c657c2a3.js",
     "static/js/787.3bee3fd7.chunk.js": "/bosa-noga-project/static/js/787.3bee3fd7.chunk.js",
     "static/media/shiny_boots_2.jpg": "/bosa-noga-project/static/media/shiny_boots_2.7f407e0a41284d5e2f33.jpg",
     "static/media/sneakers_from_oksimiron_2.jpg": "/bosa-noga-project/static/media/sneakers_from_oksimiron_2.3212c99880bfc7122f84.jpg",
@@ -113,12 +113,12 @@
     "static/media/footer-sprite.png": "/bosa-noga-project/static/media/footer-sprite.b3d5697aeb76ce9f8002.png",
     "static/media/outgoing_shoes_2.jpg": "/bosa-noga-project/static/media/outgoing_shoes_2.9eccee7aae030246426b.jpg",
     "index.html": "/bosa-noga-project/index.html",
-    "main.460e67b1.css.map": "/bosa-noga-project/static/css/main.460e67b1.css.map",
-    "main.39329ddb.js.map": "/bosa-noga-project/static/js/main.39329ddb.js.map",
+    "main.f665f41f.css.map": "/bosa-noga-project/static/css/main.f665f41f.css.map",
+    "main.c657c2a3.js.map": "/bosa-noga-project/static/js/main.c657c2a3.js.map",
     "787.3bee3fd7.chunk.js.map": "/bosa-noga-project/static/js/787.3bee3fd7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.460e67b1.css",
-    "static/js/main.39329ddb.js"
+    "static/css/main.f665f41f.css",
+    "static/js/main.c657c2a3.js"
   ]
 }

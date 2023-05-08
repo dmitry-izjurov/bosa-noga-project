@@ -39,7 +39,7 @@ function Cart() {
                         <h2 className="text-center">Корзина</h2>
                         {
                             productsInCart.length ?
-                            <table className="table table-bordered">
+                            <table className="table table-bordered table_mob">
                             <thead>
                                 <tr>
                                     <th>№</th>

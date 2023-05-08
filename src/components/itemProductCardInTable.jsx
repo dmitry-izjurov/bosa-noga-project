@@ -10,7 +10,7 @@ function ItemProductCardInTable({num, id, title, price}) {
             <td>{num}</td>
             <td>{title}</td>
             <td>{price} руб.</td>
-            <td><button className="btn btn-outline-danger btn-sm" onClick={handleClickRemoveOfCart}>Удалить</button></td>
+            <td><button className="btn btn-outline-danger btn-sm btn_mob" onClick={handleClickRemoveOfCart}>Удалить</button></td>
         </tr>
     );
 }

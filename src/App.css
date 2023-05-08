@@ -334,3 +334,63 @@ h2, .h2 {
   color: #333333;
   background-color: rgba(255, 237, 237, 0.884);
 }
+
+@media (max-width: 1000px) {
+  body {
+    margin-top: 22vh;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  .main-link_header-mob {
+    display: none;
+  }
+
+  #navbarMain {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .banner-header {
+    font-size: 5vw;
+    margin: 0;
+    top: 7vw;
+    width: 60vw;
+    height: 17vw;
+    line-height: 19vw;
+  }
+
+  .col-4, .col-5, .col-7 {
+    flex: initial;
+    max-width: initial;
+  }
+
+  .catalog-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row-cards_mob {
+    flex-direction: column;
+  }
+  
+  .table_mob {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .table_mob td {
+    padding: 1vw;
+  }
+
+  .btn_mob {
+    font-size: 4vw;
+  }
+
+}

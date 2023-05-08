@@ -24,7 +24,7 @@ function ItemProductCard({globalDataObjs}) {
                 {   data ?
                     <section className="catalog-item">
                         <h2 className="text-center">{data.title}</h2>
-                        <div className="row">
+                        <div className="row row-cards_mob">
                             <div className="col-5">
                                 <img src={data.images[0]} className="img-fluid" alt="" />
                             </div>

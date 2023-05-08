@@ -33,11 +33,11 @@ function Header({headerLogo, banner}) {
             <div className="row">
                 <div className="col">
                     <nav className="navbar navbar-expand-sm navbar-light bg-light">
-                        <Link className="navbar-brand" to="/bosa-noga-project/">
+                        <Link className="navbar-brand main-link_header-mob" to="/bosa-noga-project/">
                             <img src={headerLogo} alt="Bosa Noga" />
                         </Link>
-                        <div className="collapse navbar-collapse" id="navbarMain">
-                            <ul className="navbar-nav mr-auto">
+                        <div className="navbar-collapse" id="navbarMain">
+                            <ul id="list_header-mob" className="navbar-nav mr-auto">
                                 {listNavMenu.map((o,i) => <ItemNavMenu key={i} id={o.id} clName={o.classN} pathTo={o.path} textElem={o.title} dispatch={dispatch} />)}
                             </ul>
                             <Link to="/bosa-noga-project/cart">
